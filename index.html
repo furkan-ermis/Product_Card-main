@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Product preview card component</title>
+  </head>
+  <body class="bg-primary">
+    <div class="card even_column | bg-secondary">
+      <picture class="pic">
+        <source
+          srcset="images/image-product-desktop.jpg"
+          media="(min-width:37.5rem)"
+        />
+        <img
+          aria-hidden="true"
+          src="images/image-product-mobile.jpg"
+          alt="Gabrielle Essence Eau De Parfum"
+        />
+      </picture>
+      <div class="content">
+        <h2 class="clr-secondary ff-secondary fs-300 fw-regular">PERFUME</h2>
+        <h1 class="clr-primary ff-primary fs-700">
+          Gabrielle Essence Eau De Parfum
+        </h1>
+        <p class="text | clr-secondary ff-secondary fs-300">
+          A floral, solar and voluptuous interpretation composed by Olivier
+          Polge, Perfumer-Creator for the House of CHANEL.
+        </p>
+        <div class="price">
+          <p class="new_price | clr-price ff-primary fs-700 fw-bold">
+            <span class="visually-hidden">Current price:</span> $149.99
+          </p>
+          <p class="old_price">
+            <span class="visually-hidden">Original price:</span>
+            <del class="clr-secondary ff-secondary fs-300">$169.99</del>
+          </p>
+        </div>
+        <button class="bg-button" data-icon="shopping-cart">
+          <p class="clr-button ff-secondary fs-300">Add to Cart</p>
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
